@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라벨링 메모장</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <div class="label-controls">
+                <input type="text" id="labelInput" placeholder="라벨 입력">
+                <button id="addLabelBtn">라벨 추가</button>
+            </div>
+            <div class="button-group">
+                <button id="saveBtn">메모 저장</button>
+                <button id="loadBtn">메모 불러오기</button>
+                <button id="clearBtn">지우기</button>
+            </div>
+        </div>
+        <div class="labels-container">
+            <div id="labelsList"></div>
+            <div class="filter-container">
+                <select id="labelFilter">
+                    <option value="">모든 메모</option>
+                </select>
+            </div>
+        </div>
+        <div class="editor">
+            <textarea id="noteArea" placeholder="여기에 메모를 입력하세요..."></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
